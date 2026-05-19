@@ -3,15 +3,15 @@
 # Owns: backend/services/classifier.py, backend/workers/**
 # Phase: 0
 
-## Status: NOT STARTED
+## Status: COMPLETE
 
 ## Phase 0 Checklist
-- [ ] Gemini API key verified (test classify call)
-- [ ] Anthropic API key verified (test haiku call)
-- [ ] preprocess_image() tested: input 4MB → output <50KB, 512x512
-- [ ] EXIF rotation fix verified on sideways phone photo
-- [ ] Prompt caching verified: cache_creation_input_tokens > 0 on first call
-- [ ] safe_json() handles malformed Gemini output without crash
+- [x] Gemini API key verified (test classify call)
+- [x] Anthropic API key verified (test haiku call)
+- [x] preprocess_image() tested: input 4MB → output <50KB, 512x512
+- [x] EXIF rotation fix verified on sideways phone photo
+- [x] Prompt caching verified: cache_creation_input_tokens > 0 on first call
+- [x] safe_json() handles malformed Gemini output without crash
 
 ## Blocked By
 Nothing — can start immediately.

@@ -8,17 +8,27 @@
 
 ---
 
-## Skills Installed
+## Agentic System — Claude Code Only
+No LangGraph. No external orchestration framework. Agents are Claude Code subagents
+spawned with `isolation: "worktree"`. Each worktree is a git branch. Progress tracked
+in `agents/PROGRESS-*.md`. Conflicts prevented by file ownership in CONTRACTS.md.
+
+## Skills Installed (`.claude/skills/`)
 ```
-/rn-component     React Native component with Reanimated + Gesture Handler
-/rn-screen        Full screen with Expo Router navigation
-/rn-perf          FlashList, memo, performance patterns
-/review           PR review before merge
-/security-review  Auth, RLS, input validation check
-/simplify         Remove over-engineering after feature complete
-/init             Generate CLAUDE.md for new worktree
+react-native/skills/react-native-best-practices   Performance, FlashList, Reanimated
+react-native/skills/react-native-brownfield-*     Migration patterns
+hub/engineering/karpathy-coder                    Clean code, think before typing
+hub/engineering/llm-cost-optimizer                Prompt caching, token reduction
+hub/engineering/chaos-engineering                 Resilience patterns
+hub/engineering/agenthub                          Multi-agent coordination
+anthropic/skills/claude-api                       Anthropic SDK, prompt caching
+anthropic/skills/frontend-design                  UI component patterns
+anthropic/skills/webapp-testing                   Test patterns
 ```
-Skill source: `.claude/skills/react-native/` (callstack/agent-skills)
+
+## How to Invoke Skills
+Type the skill path or name when starting a task. Example:
+"Using react-native-best-practices skill, build the wardrobe grid component"
 
 ---
 
